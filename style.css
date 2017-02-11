@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Abel|VT323');
+#banner1img {
+  width: 100%;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#headbanner {
+  height: 200px;
+  position: relative;
+}
+
+html,
+body {
+  overflow: auto;
+  max-width:100%;
+  overflow-x: hidden;
+  height:100%;
+}
+
+body {
+  height: 100%;
+  background-color:black;
+  width:100%;
+  min-width:1187px;
+}
+
+#firstcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  right: 230px;
+  top: 146px;
+  z-index: 1;
+  color: white;
+  font-family: 'Overpass Mono', monospace;
+}
+
+#leftbracket {
+  position: absolute;
+  right: 70.3%;
+  top: -14px;
+  font-size: 132px;
+  font-family: 'Minion Pro';
+  color: #f21616;
+  text-shadow: -3px 0px 8px rgba(255, 0, 0, 0.62);
+  animation: slide-left 1s linear;
+  animation-iteration-count:1;
+  animation-timing-function:ease-in;
+}
+
+@keyframes slide-left {
+  0% {
+    right:54%;
+  }
+  50%{
+    right:70.3%;
+    text-shadow: -3px 0px 8px rgba(255, 0, 0, 0.62);
+  }
+  52% {
+    text-shadow: -3px 0px 30px rgba(255, 0, 0, 0.62);
+  }
+  100% {
+    text-shadow: -3px 0px 8px rgba(255, 0, 0, 0.62);
+  }
+}
+
+#rightbracket {
+  position: absolute;
+  left: 70%;
+  top: -14px;
+  font-size: 132px;
+  font-family: 'Minion Pro';
+  color: #f21616;
+  text-shadow: 3px 0px 8px rgba(255, 0, 0, 0.62);
+  animation: slide-right .5s linear;
+  animation-iteration-count:1;
+  animation-timing-function:ease-in;
+}
+
+@keyframes slide-right {
+  0%{
+    left:54%;
+  }
+  100% {
+    left:70%;
+  }
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.ptext p {
+  z-axis: 1;
+  position: absolute;
+  color: #f21616;
+  font-family: 'Overpass Mono', monospace;
+  top: 270px;
+  font-size: 20px;
+  left: 200px;
+  transition: all 0.3s ease-in;
+  text-shadow: 0px 3px 8px rgba(255, 0, 0, 0.3);
+}
+
+#banner3 p:hover {
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  text-shadow: 1px 0px 20px #ffd8df;
+  transition: all 0.1s ease-in;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 72px;
+  color: #FAFAFA;
+  animation:shadow-fade 1s infinite; 
+}
+
+@keyframes shadow-fade{
+  0% {
+    text-shadow: 0px 0px 17px rgba(150, 150, 150, 0.6);
+  }
+  
+  50 {
+    text-shadow: 0px 0px 17px rgba(150, 150, 150, 0);
+  }
+  
+  100% {
+    text-shadow: 0px 0px 17px rgba(150, 150, 150, 0.6);
+  }
+}
+
+.dud {
+  color: #515151;
+}
+
+.banner2 {
+  background-color: black;
+  height: 1000px;
+}
+
+.buffer {
+  height: 250px;
+}
+
+#helloworld {
+  color: white;
+}
+
+#red-text {
+  color: #f21616;
+  text-shadow: 0px 0px 7px rgba(255, 0, 0, 1);
+}
+
+#experience {
+  padding: 50px;
+  top: 80px;
+  position: relative;
+}
+
+#code_experience {
+  color: #f21616;
+  font-size: 46px;
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 0px 0px 7px rgba(255, 0, 0, 1);
+}
+
+#experience h4 {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 32px;
+}
+
+#goldenratio {
+  width: 160px;
+  top: -27px;
+  position: relative;
+  
+}
+
+#bumpup {
+  bottom: 21px;
+  position: relative;
+}
+
+#speakingdiv img {
+  width: 100px;
+}
+
+#speakingdiv {
+  position: relative;
+  bottom: 25px;
+}
+
+#banner3 {
+  height: 400px;
+  background-color: #f21616;
+}
+
+#machstripediv img {
+  width: 100%;
+  position: relative;
+  
+}
+
+.bottomexp {
+  height: 400px;
+  padding: 10px;
+  border-radius: 114px 114px 114px 114px;
+  -moz-border-radius: 114px 114px 114px 114px;
+  -webkit-border-radius: 114px 114px 114px 114px;
+  border: 28px double #000000;
+}
+
+#androiddiv1 {
+  height: 400px;
+  width: 33%;
+  border-radius: 114px 22px 114px 114px;
+  -moz-border-radius: 114px 22px 114px 114px;
+  -webkit-border-radius: 114px 22px 114px 114px;
+  border: 28px double #000000;
+}
+
+#androiddiv2 {
+  height: 400px;
+  width: 33%;
+  border-radius: 22px 22px 114px 114px;
+  -moz-border-radius: 22px 22px 114px 114px;
+  -webkit-border-radius: 22px 22px 114px 114px;
+  border: 28px double #000000;
+}
+
+#androiddiv3 {
+  height: 400px;
+  width: 33%;
+  border-radius: 22px 114px 114px 114px;
+  -moz-border-radius: 22px 114px 114px 114px;
+  -webkit-border-radius: 22px 114px 114px 114px;
+  border: 28px double #000000;
+}
+
+#androidlogo {
+  padding-top: 20px;
+  width: 90px;
+}
+
+#filmlogo {
+  width: 130px;
+  padding-top: 16px;
+}
+
+#androiddiv1 p {
+  font-family: 'Abel', sans-serif;
+  padding-top: 36px;
+  font-size: 28px;
+  color: black;
+  font-weight: bolder;
+}
+
+#androiddiv2 p {
+  font-family: 'Abel', sans-serif;
+  padding-top: 16px;
+  font-size: 28px;
+  color: black;
+  font-weight: bolder;
+}
+
+#cpulogo {
+  width: 220px;
+}
+
+#androiddiv3 p {
+  font-family: 'Abel', sans-serif;
+  font-size: 28px;
+  color: black;
+  font-weight: bolder;
+}
+
+#banner4 {
+  background-color: black;
+  height: 1250px;
+}
+
+#bio {
+  float: left;
+  padding-left: 70px;
+  color: #939393;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cardo|Ek+Mukta');
+#bio {
+  width: 60%;
+  font-family: 'Ek Mukta';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+#bio h1 {
+  font-family: 'Merriweather', serif;
+}
+
+#quote {
+  position: relative;
+  padding-top: 50px;
+}
+
+#quote p {
+  font-size: 16px;
+  color: white;
+  opacity: 0.3;
+}
+
+#quote p:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-in;
+}
+
+#profpic {
+  width: 80%;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: relative;
+  left: 13%;
+}
+
+#white-text {
+  color: white;
+}
+
+#light-text {
+  color: #d8d8d8;
+}
+
+#achievements {
+  padding-left: 40px;
+  color: #d6d6d6;
+  font-size: 20px;
+}
+
+#achievements ul {
+  list-style-type:none;
+}
+
+#achievements a {
+  text-decoration:none;
+}
+
+i {
+  color:red;
+}
+
+#git-icon {
+  height:70px;
+  position:relative;
+  left:60%;
+  top:20px;
+}
+
+#linked-icon {
+  height:65px;
+  position:relative;
+  left:43%;
+  top:20px;
+}
+
+#codepen-icon {
+  height:82px;
+  position:relative;
+  top:9px;
+  left:23%;
+}
